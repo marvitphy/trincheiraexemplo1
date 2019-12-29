@@ -212,7 +212,7 @@ ul{
     overflow-x: auto;
     white-space: nowrap;
     -webkit-overflow-scrolling: touch;
-    height: 350px;
+    height: 380px;
     justify-content: center;
     margin-left: 200px;
     transition: height 0.5s;
