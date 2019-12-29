@@ -143,7 +143,7 @@ ul{
     
 }
 .site-title .site-background{
-    padding-top: 4.5rem;
+    padding-top: 5.5rem;
     text-align: center;
     color: white;
     
@@ -170,23 +170,35 @@ ul{
     /** transition: 2s; */
     width: 220px;
     /** display: inline-block; */
-    font-family: Tahoma, Roboto;
+    margin-top: 10px;
     color: rgb(63, 63, 63);
     /** font-family: calibri; */ 
     font-size: 19px;
     display: inline-block;
+  
     white-space: normal;
     border-radius: 10px;
     background: white;
-    margin-left: 8px;
-    
+    border-radius: 20px;
+    transition: 0.9s;
+  }
+
+  .card img{
+    width:100%; height: 190px;
   }
   .card p {
     color: rgb(126, 126, 126);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+  }
+  .card h4 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   
   .card:hover{
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    width: 250px;
+    height: 350px;
   }
   .card img{
     border-top-left-radius: 10px;
@@ -194,25 +206,30 @@ ul{
   }
   
   .container {
-    padding: 2px 16px;
+    padding: 1px 16px;
   }
   .servicos-cards {
     overflow-x: auto;
     white-space: nowrap;
     -webkit-overflow-scrolling: touch;
-    height: 375px;
-    margin-top: 80px;
-
-  
+    height: 350px;
+    justify-content: center;
+    margin-left: 200px;
+    transition: height 0.5s;
   }
 
+  .servicos-cards:hover{
+    height: 390px;
+  }
   ::-webkit-scrollbar {
     width: 3px;
     height: 15px;
+
   }
 ::-webkit-scrollbar-thumb{
-  background: rgb(173, 173, 173);  
+  background: white;  
   border-radius: 15px;
+  
 
 }
 
@@ -252,18 +269,24 @@ ul{
         margin-top: 5px;
     }
 
-
-
-  }
-
-  @media only screen and (max-width: 10000px) {
-
-    .card{
-        width: 350px;
+    .servicos-cards {
+        overflow-x: auto;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
         height: 350px;
-    }
+        margin-top: 80px;
+        margin-left: 2px;
+        margin-right: 2px;
+      }
+
+
+
 
 
   }
 
 /* janela de exibição >= 750px*/
+
+
+
+
