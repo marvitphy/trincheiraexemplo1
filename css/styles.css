@@ -135,34 +135,85 @@ ul{
 
 /* TITULO DO SITE*/ 
 
-main .site-title{
+.site-title{
     background-size: cover;
     height: 110vh;
-    display: flex;
+    display: inline;
     justify-content: center;
     
 }
-main .site-title .site-background{
-    padding-top: 8rem;
+.site-title .site-background{
+    padding-top: 4.5rem;
     text-align: center;
     color: white;
     
 }
 
-main .site-title h1, h3{
+ .site-title h1, h3{
     margin: 0rem;
     font-size: 1.35rem;
 }
 
-main .site-title h1{
+.site-title h1{
     font-size: 2.4rem;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
     letter-spacing: 2px;
 }
-main .site-title h3{
+ .site-title h3{
     font-family: Tahoma;
     letter-spacing: 4.5px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    /** transition: 2s; */
+    width: 220px;
+    /** display: inline-block; */
+    font-family: Tahoma, Roboto;
+    color: rgb(63, 63, 63);
+    /** font-family: calibri; */ 
+    font-size: 19px;
+    display: inline-block;
+    white-space: normal;
+    border-radius: 10px;
+    background: white;
+    margin-left: 8px;
+    
+  }
+  .card p {
+    color: rgb(126, 126, 126);
+  }
+  
+  .card:hover{
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+  .card img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .container {
+    padding: 2px 16px;
+  }
+  .servicos-cards {
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    height: 375px;
+    margin-top: 80px;
+
+  
+  }
+
+  ::-webkit-scrollbar {
+    width: 3px;
+    height: 15px;
+  }
+::-webkit-scrollbar-thumb{
+  background: rgb(173, 173, 173);  
+  border-radius: 15px;
+
 }
 
 
@@ -201,6 +252,16 @@ main .site-title h3{
         margin-top: 5px;
     }
 
+
+
+  }
+
+  @media only screen and (max-width: 10000px) {
+
+    .card{
+        width: 350px;
+        height: 350px;
+    }
 
 
   }
